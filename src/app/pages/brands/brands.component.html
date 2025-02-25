@@ -1,0 +1,15 @@
+<section >
+    <div class=" grid sm:grid-cols-2  lg:grid-cols-4 gap-10">
+    @for(brand of brands; track brand._id) {
+        <div class="card text-green-600 text-center text-2xl font-bold bg-primary  border "  >
+            <div class="border">
+                <img class=" w-full h-[250px] object-contain" [src]="brand.image" alt="Title" />
+            </div>
+           
+            <div class="card-body py-3">
+                <h4 class="card-title">{{brand.name}}</h4>
+            </div>
+        </div>
+    }  
+</div>
+</section>

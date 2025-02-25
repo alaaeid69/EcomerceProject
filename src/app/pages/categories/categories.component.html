@@ -1,0 +1,31 @@
+<section >
+    <div class=" grid sm:grid-cols-2  lg:grid-cols-3 gap-10">
+    @for(cat of categories; track cat._id) {
+        <div class="card text-green-600 text-center text-2xl font-bold bg-primary  border " (click)="getSpacificCatDetails(cat._id , cat.name)" >
+            <div class="border">
+                <img class=" w-full h-[400px] object-fill" [src]="cat.image" alt="Title" />
+            </div>
+           
+            <div class="card-body py-3">
+                <h4 class="card-title">{{cat.name}}</h4>
+            </div>
+        </div>
+    }  
+</div>
+    <div class="text-center my-9 ">
+        <div>
+            <h2 class="text-4xl text-green-600 font-bold ">  {{selectedCat}} subcategories</h2>
+        </div>
+        <div class=" grid sm:grid-cols-2  lg:grid-cols-3 gap-5">
+            @for (subcat of subcategories; track subcat._id) {
+                <div class="border p-4 my-3 hover:shadow-md hover:shadow-green-600 rounded-sm">
+                    <h6 class="text-xl font-bold">{{subcat.name}}</h6>
+                </div>
+                
+            }
+           
+        </div>
+    
+    </div>
+</section>
+

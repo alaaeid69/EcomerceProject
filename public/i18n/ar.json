@@ -1,0 +1,61 @@
+{
+    "navbar": {
+        "home": "الرئيسية",
+        "WishList": "قائمة الأمنيات",
+        "products": "المنتجات",
+        "Categories": "الفئات",
+        "brands": "العلامات التجارية",
+        "LogIn": "تسجيل الدخول",
+        "LogOut": "تسجيل الخروج",
+        "register": "التسجيل",
+        "lang" :"اللغة"
+    },
+    "login": {
+        "logNow":"سجل الان",
+        "email": "البريد الإلكتروني",
+        "Ensure": "تأكد من استيفاء هذه المتطلبات:",
+        "emailIsRequired": "البريد الإلكتروني مطلوب",
+        "entervalidemail": "أدخل بريدًا إلكترونيًا صالحًا",
+        "password": "كلمة المرور",
+        "passwordIsRerquired": "كلمة المرور مطلوبة",
+        "entervalidpassword": "أدخل كلمة مرور صالحة"
+    , "signIn":"سجل",
+    "forgetPassword" :"نسيت كلمة المرور"
+    },
+    "register": {
+    "RegisterNow": "سجل الآن",
+    "name": "الاسم",
+    "Ensure": "تأكد من استيفاء هذه المتطلبات:",
+    "nameIsrequired": "الاسم مطلوب",
+    "nameminlength": "الحد الأدنى لطول الاسم: 3",
+    "namemaxlength": "الحد الأقصى لطول الاسم: 20",
+    "email": "البريد الإلكتروني",
+    "emailIsRequired": "البريد الإلكتروني مطلوب",
+    "enterValidEmail": "أدخل بريدًا إلكترونيًا صالحًا",
+    "password": "كلمة المرور",
+    "passwordIsRequired": "كلمة المرور مطلوبة",
+    "enterValidPassword": "أدخل كلمة مرور صالحة",
+    "Repassword": "تأكيد كلمة المرور",
+    "theRePasswordareIncorrect": "كلمتا المرور غير متطابقتين",
+    "phone": "الهاتف",
+    "phoneIsRequired": "الهاتف مطلوب",
+    "enterValidPhone": "أدخل رقم هاتف صالح",
+    "signUp": "تسجيل"
+  },
+  "forgetName": {
+    "forgetPassword": "نسيت كلمة المرور",
+    "email": "البريد الإلكتروني",
+    "emailIsRequired": "البريد الإلكتروني مطلوب",
+    "enterValidEmail": "يرجى إدخال بريد إلكتروني صحيح",
+    "VerifyEmail":"اكد البريد الالكتروني",
+    "code": "الكود",
+    "codesRequired": "كود التحقق مطلوب",
+    "enterValidcode":"يرجي ادجال كود صحيح",
+    "Verifycode":"اكد الكود",
+    "Resetpassword": "إعادة تعيين كلمة المرور",
+    "newPassword" :" كلمة المرور الجديده",
+    "passwordIsRequired": "كلمة المرور مطلوبة",
+    "enterValidPassword": "يرجى إدخال كلمة مرور صحيحة",
+    "passWord":"تسجيل"
+  }
+}

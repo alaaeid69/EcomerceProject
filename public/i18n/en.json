@@ -1,0 +1,64 @@
+{
+    "navbar" :{
+        "home": "home",
+        "WishList": "Wish List",
+        "products": "products",
+        "Categories": "Categories",
+        "brands": "Brands",
+        "LogIn": "Log In",
+        "LogOut": "Log Out",
+        "register": "Register",
+        "lang" :"Lang"
+    },
+    "login":{
+      "logNow" :"login now",
+      "email" :"email",
+      "Ensure":"Ensure that  requrements are met:" ,
+      "emailIsRequired":"email is rerquired",
+      "entervalidemail":"enter valid email",
+      "password":"password",
+      "passwordIsRerquired":"password is rerquired",
+      "entervalidpassword":"enter valid password",
+      "signIn":"Sign In",
+      "forgetPassword" :"Forget Password"
+    
+    },
+    "register": {
+        "RegisterNow" :"Register now",
+        "name" :" name",
+        "Ensure":"Ensure that these requirements are met:",
+        "nameIsrequired":"name is required",
+        "nameminlength" :"name min length: 3",
+        "namemaxlength" :"name max length: 20",
+        "email":"email",
+        "emailIsRequired": "email is required",
+        "enterValidEmail": "enter valid email",
+        "password": "password",
+        "passwordIsRequired": "password is required",
+        "enterValidPassword": "enter valid password",
+        "Repassword": "Repassword",
+        "theRePasswordareIncorrect": "the rePassword are incorrect",
+        "phone": "phone",
+        "phoneIsRequired": "phone is required",
+        "enterValidPhone": "enter valid phone",
+        "signUp": "signUp"
+    },
+    "forgetName":{
+        "forgetPassword":"Forget Password",
+        "email":"email",
+        "VerifyEmail":"Verify Email",
+        "emailIsRequired": "email is required",
+        "enterValidEmail": "enter valid email",
+        "code":"Code",
+        "codesRequired": "code is required",
+        "enterValidcode":"enter valid code",
+        "Verifycode":"Verify code",
+        "Resetpassword" :"Reset Password",
+        "newPassword" :" New password",
+        "passwordIsRequired": "password is required",
+        "enterValidPassword": "enter valid password",
+        "password":"sign In"
+
+    }
+    
+}

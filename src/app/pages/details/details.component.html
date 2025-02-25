@@ -1,0 +1,20 @@
+<section>
+    <div class="container w-[80%] mx-auto flex items-center">
+        <div class="w-1/4 bg-gray-500 ">
+            <img [src]="productDetail.imageCover" alt="" class="w-full">
+        </div>
+        <div class="w-3/4">
+            <h2 class="text-lg my-2">{{productDetail.title}}</h2>
+            <p class="text-sm my-2">{{productDetail.description}}</p>
+            <span class="text-green-600 text-sm my-2">{{productDetail.category.name}}</span>
+            <div class="flex justify-between my-2">
+                <span>{{productDetail.price}} EGP</span>
+                <p>
+                    <i class="fas  fa-star text-yellow-500"></i>
+                    {{productDetail.ratingsAverage}}
+                </p>
+            </div>
+            <button class=" bg-green-600 text-white my-6 px-[15px] py-2 w-full rounded mx-auto  hover:bg-green-800 transition-colors duration-500">Add to cart</button>
+        </div>
+    </div>
+</section>

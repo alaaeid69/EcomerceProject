@@ -1,0 +1,79 @@
+<section class="w-[90%] bg-gray-100 mx-auto border">
+    <h1 class="text-3xl text-green-600 text-center">Checkout</h1>
+    <form [formGroup]="checkoutForm" class="w-[90%] mx-auto" (ngSubmit)="submitForm()">
+        <div class=" mb-1">
+          @let details = checkoutForm.get('details');
+            <label for="details" class="block mx-2 text-sm font-medium text-gray-900 dark:text-white">Details</label>
+            <textarea  formControlName="details" placeholder="  Details" id="details" class="w-full h-[60%] rounded-md my-3 bg-white  text-gray-500 "> </textarea>
+            @if(details?.errors && details?.touched){
+              <div class="flex p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                  <svg class="shrink-0 inline w-4 h-4 me-3 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                  </svg>
+                  <span class="sr-only">Danger</span>
+                  <div>
+                    <span class="font-medium">Ensure that these requirements are met:</span>
+                      <ul class="mt-1.5 list-disc list-inside">
+                          @if (details?.getError('required')) {
+                              <li>details is rerquired</li>
+                          }
+                    </ul>
+                  </div>
+                </div>
+          }
+         
+          </div>
+        <div class=" mb-1">
+          @let phone=checkoutForm.get('phone') ;
+            <label for="phone" class="block mx-2 text-sm font-medium text-gray-900 dark:text-white">phone</label>
+            <input  formControlName="phone" type="tel" placeholder="  phone" id="phone" class="w-full h-[40px]  my-3 bg-white border rounded-sm dark:bg-gray-900 dark:text-white">
+            @if(phone?.errors && phone?.touched){
+              <div class="flex p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                  <svg class="shrink-0 inline w-4 h-4 me-3 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                  </svg>
+                  <span class="sr-only">Danger</span>
+                  <div>
+                    <span class="font-medium">Ensure that these requirements are met:</span>
+                      <ul class="mt-1.5 list-disc list-inside">
+                          @if (phone?.getError('required')) {
+                              <li>phone is rerquired</li>
+                          }
+                          @else if(phone?.getError('pattern')){
+                            <li>Please enter correct number</li>
+                          }
+                    </ul>
+                  </div>
+                </div>
+          }
+         
+        </div>
+          <div class=" mb-1">
+            @let city = checkoutForm.get('city');
+            <label for="city" class="block mx-2 text-sm font-medium text-gray-900 dark:text-white">city</label>
+            <input  formControlName="city" type="text" placeholder="  city" id="phone" class="w-full h-[40px] my-3 bg-white border rounded-sm dark:bg-gray-900  dark:text-white"> 
+            @if(city?.errors && city?.touched){
+                <div class="flex p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                    <svg class="shrink-0 inline w-4 h-4 me-3 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                    </svg>
+                    <span class="sr-only">Danger</span>
+                    <div>
+                      <span class="font-medium">Ensure that these requirements are met:</span>
+                        <ul class="mt-1.5 list-disc list-inside">
+                            @if (city?.getError('required')) {
+                                <li>city is rerquired</li>
+                            }
+                      </ul>
+                    </div>
+                  </div>
+            }
+           
+         </div>
+         <button [disabled]="checkoutForm.invalid" class="btn-main mx-2" type="submit">online Payment</button>
+    </form>
+
+    
+    
+    
+</section>
