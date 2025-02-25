@@ -103,6 +103,7 @@ export const routes: Routes = [
             (m) => m.DetailsComponent
           ),
         title: 'Details',
+        data: { }
       },
       {
         path: 'checkout/:id',

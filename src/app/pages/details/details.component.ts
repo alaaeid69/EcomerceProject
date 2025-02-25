@@ -3,8 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../../core/services/products/product.service';
 import { Iproduct } from '../../shared/iproduct';
 
+
 @Component({
   selector: 'app-details',
+ 
   imports: [],
   templateUrl: './details.component.html',
   styleUrl: './details.component.scss'
